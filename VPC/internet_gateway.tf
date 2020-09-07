@@ -1,0 +1,9 @@
+resource "aws_internet_gateway" "My_VPC_GW" {
+  vpc_id = aws_vpc.my_vpc.id
+
+
+  tags = {
+    Name       = "Gaukhar_Imankulova"
+    Department = "DEVOPS"
+  }
+}
