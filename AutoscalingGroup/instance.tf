@@ -1,5 +1,5 @@
 resource "aws_instance" "centos" {
-  ami           = "ami-0e556cd6c45731fad"
+  ami           = "ami-0305e36a"
   instance_type = "t2.micro"
 
   tags = {

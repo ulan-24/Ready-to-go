@@ -1,5 +1,5 @@
 resource "aws_autoscaling_group" "web" {
-  name = "${aws_launch_configuration.web.name}-asg"
+  # name = "${aws_launch_configuration.web.name}-asg"
 
   min_size             = 1
   desired_capacity     = 2
@@ -10,7 +10,7 @@ resource "aws_autoscaling_group" "web" {
     "${aws_elb.web_elb.id}"
   ]
 
-  launch_configuration = "${aws_launch_configuration.web.name}"
+  # launch_configuration = "${aws_launch_configuration.web.name}"
   availability_zones = ["us-east-1a", "us-east-1b"]
 
   enabled_metrics = [
